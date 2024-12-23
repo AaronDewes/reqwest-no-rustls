@@ -575,7 +575,7 @@ type BoxConn = Box<dyn AsyncConnWithInfo>;
 
 pub(crate) mod sealed {
     use super::*;
-    #[derive(Debug, Clone)]
+    #[derive(Debug)]
     pub struct Unnameable(pub(super) Uri);
 
     pin_project! {
